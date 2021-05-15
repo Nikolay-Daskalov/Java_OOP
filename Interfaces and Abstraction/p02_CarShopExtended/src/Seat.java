@@ -14,7 +14,7 @@ public class Seat extends CarImpl implements Sellable {
 
     @Override
     public String toString() {
-        return String.format("%s%n%s sells for %f",
+        return String.format("%s%n%s sells for %.2f EURO.",
                 super.toString(), this.getModel(), this.getPrice());
     }
 }

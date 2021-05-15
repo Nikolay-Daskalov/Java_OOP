@@ -22,7 +22,7 @@ public class Audi extends CarImpl implements Rentable {
 
     @Override
     public String toString() {
-        return String.format("%s%nMinimum rental period of %d days. Price per day %f",
+        return String.format("%s%nMinimum rental period of %d days. Price per day %.2f EURO.",
                 super.toString(), this.getMinRentDay(), this.getPricePerDay());
     }
 }
