@@ -7,7 +7,6 @@ public class Ferrari implements Car{
         this.driverName = driverName;
     }
 
-
     @Override
     public String toString() {
         return String.format("%s/%s/%s/%s",this.model,this.brakes(),
