@@ -13,8 +13,7 @@ public class Main {
         Class[] citizenInterfaces = Citizen.class.getInterfaces();
         if (Arrays.asList(citizenInterfaces).contains(Birthable.class)
                 && Arrays.asList(citizenInterfaces).contains(Identifiable.class)) {
-            Method[] methods = Birthable.class.getDeclaredMethods();
-            methods = Identifiable.class.getDeclaredMethods();
+            Method[] methods = Identifiable.class.getDeclaredMethods();
             Scanner scanner = new Scanner(System.in);
             String name = scanner.nextLine();
             int age = Integer.parseInt(scanner.nextLine());
@@ -26,7 +25,6 @@ public class Main {
             System.out.println(methods[0].getReturnType().getSimpleName());
             System.out.println(methods.length);
             System.out.println(methods[0].getReturnType().getSimpleName());
-
 
             reader.close();
         }
