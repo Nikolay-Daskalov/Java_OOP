@@ -1,4 +1,4 @@
-public class Citizen implements Identifiable,Birthable{
+public class Citizen implements Identifiable, Birthable {
     private String name;
     private int age;
     private String id;
