@@ -1,27 +1,27 @@
 public class Rectangle extends Shape {
-    private Double height;
-    private Double width;
+    private double height;
+    private double width;
 
-    public Rectangle(Double height, Double width) {
+    public Rectangle(double height, double width) {
         this.height = height;
         this.width = width;
     }
 
-    public Double getHeight() {
-        return height;
+    public double getHeight() {
+        return this.height;
     }
 
-    public Double getWidth() {
-        return width;
+    public double getWidth() {
+        return this.width;
     }
 
     @Override
-    public double calculatePerimeter() {
+    protected double calculatePerimeter() {
         return 2 * (this.height + this.width);
     }
 
     @Override
-    public double calculateArea() {
+    protected double calculateArea() {
         return this.height * this.width;
     }
 }

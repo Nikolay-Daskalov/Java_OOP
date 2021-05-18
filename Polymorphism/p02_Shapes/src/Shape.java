@@ -1,10 +1,8 @@
 public abstract class Shape {
-    private Double perimeter;
-    private Double area;
 
-    public abstract double calculatePerimeter();
+    protected abstract double calculatePerimeter();
 
-    public abstract double calculateArea();
+    protected abstract double calculateArea();
 
     public double getPerimeter() {
         return this.calculatePerimeter();

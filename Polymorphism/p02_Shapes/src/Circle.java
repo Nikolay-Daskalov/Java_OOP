@@ -1,22 +1,22 @@
 public class Circle extends Shape {
 
-    private Double radius;
+    private double radius;
 
-    public final Double getRadius() {
+    public double getRadius() {
         return radius;
     }
 
-    public Circle(Double radius) {
+    public Circle(double radius) {
         this.radius = radius;
     }
 
     @Override
-    public double calculatePerimeter() {
+    protected double calculatePerimeter() {
         return 2 * Math.PI * this.radius;
     }
 
     @Override
-    public double calculateArea() {
+    protected double calculateArea() {
         return Math.PI * this.radius * this.radius;
     }
 }
