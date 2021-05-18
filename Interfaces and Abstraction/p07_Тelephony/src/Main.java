@@ -1,0 +1,22 @@
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.lang.reflect.Method;
+import java.util.*;
+import java.util.stream.Collectors;
+
+public class Main {
+    public static void main(String[] args) throws IOException {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+        Smartphone smartphone = new Smartphone(Arrays.stream(reader.readLine().split("\\s+"))
+                .collect(Collectors.toList()), Arrays.stream(reader.readLine().split("\\s+"))
+                .collect(Collectors.toList()));
+
+        System.out.print(smartphone.call());
+        System.out.print(smartphone.browse());
+
+        reader.close();
+    }
+}
