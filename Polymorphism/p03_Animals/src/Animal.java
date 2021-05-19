@@ -3,17 +3,20 @@ public abstract class Animal {
     private String favouriteFood;
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public String getFavouriteFood() {
-        return favouriteFood;
+        return this.favouriteFood;
     }
 
-    public Animal(String name, String favouriteFood) {
+    protected Animal(String name, String favouriteFood) {
         this.name = name;
         this.favouriteFood = favouriteFood;
     }
 
-    public abstract String explainSelf();
+    public String explainSelf(){
+        return String.format("I am %s and my favourite food is %s", this.getName(), this.getFavouriteFood()) +
+                System.lineSeparator();
+    }
 }
