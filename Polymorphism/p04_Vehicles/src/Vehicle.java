@@ -4,7 +4,7 @@ public abstract class Vehicle {
     protected double fuelQuantity;
     protected double fuelConsumptionPerKm;
 
-    public Vehicle(double fuelQuantity, double fuelConsumptionPerKm) {
+    protected Vehicle(double fuelQuantity, double fuelConsumptionPerKm) {
         this.fuelQuantity = fuelQuantity;
         this.fuelConsumptionPerKm = fuelConsumptionPerKm;
     }

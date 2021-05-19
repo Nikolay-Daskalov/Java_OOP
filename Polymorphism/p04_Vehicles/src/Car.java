@@ -1,5 +1,4 @@
 public class Car extends Vehicle {
-
     public Car(double fuelQuantity, double fuelConsumptionPerKm) {
         super(fuelQuantity, fuelConsumptionPerKm);
         this.fuelIncreasing();

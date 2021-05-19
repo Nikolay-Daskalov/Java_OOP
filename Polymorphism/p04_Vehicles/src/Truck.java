@@ -3,7 +3,6 @@ public class Truck extends Vehicle {
         super(fuelQuantity, fuelConsumptionPerKm);
         this.fuelIncreasing();
     }
-
     @Override
     public void refueling(double fuel) {
         this.fuelQuantity += fuel * 0.95;
