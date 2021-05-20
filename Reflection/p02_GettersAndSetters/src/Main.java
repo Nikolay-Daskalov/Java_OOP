@@ -1,15 +1,10 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.*;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 public class Main {
-    public static void main(String[] args) throws IOException, NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    public static void main(String[] args) {
 
         Method[] declaredMethods = Reflection.class.getDeclaredMethods();
         Predicate<Method> predicate = method -> method.toString().contains("get");
@@ -32,10 +27,8 @@ public class Main {
         }
 
         for (Method setter : setters) {
-            System.out.printf("%s and will set field of class %s",setter.getName(),setter.getParameterTypes()[0].getName());
+            System.out.printf("%s will set field of class %s",setter.getName(),setter.getParameterTypes()[0].getName());
             System.out.println();
         }
-
-
     }
 }

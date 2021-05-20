@@ -30,7 +30,7 @@ public class Reflection implements Serializable {
     }
 
     public final String getName() {
-        return name;
+        return this.name;
     }
 
     private void setName(String name) {
@@ -38,7 +38,7 @@ public class Reflection implements Serializable {
     }
 
     protected String getWebAddress() {
-        return webAddress;
+        return this.webAddress;
     }
 
     private void setWebAddress(String webAddress) {
@@ -46,7 +46,7 @@ public class Reflection implements Serializable {
     }
 
     public String getEmail() {
-        return email;
+        return this.email;
     }
 
     public void setEmail(String email) {
@@ -54,7 +54,7 @@ public class Reflection implements Serializable {
     }
 
     protected final int getZip() {
-        return zip;
+        return this.zip;
     }
 
     private void setZip(int zip) {
